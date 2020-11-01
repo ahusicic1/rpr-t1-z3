@@ -4,7 +4,7 @@ public class Sat {
         int sati,minute,sekunde;
 
         Sat(int sati, int minute, int sekunde) { postavi(sati,minute,sekunde); }
-        public void postavi(int sati, int minute, int sekunde) { sati=sati; minute=minute; sekunde=sekunde; }
+        public void postavi(int sati, int minute, int sekunde) { this.sati=sati; this.minute=minute; this.sekunde=sekunde; }
         public void sljedeci() {
             sekunde = sekunde + 1;
             if (sekunde == 60) { sekunde = 0; minute = minute + 1; }
